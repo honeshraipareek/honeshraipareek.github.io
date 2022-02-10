@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url("/polygon-scatter-haikei.svg");
+    background-size: 500%;
+    animation: anim 8s infinite alternate;
+}
+@keyframes anim{
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 100%;
+    }
+}
+
+h2{
+    font-size: 8vh;
+    font-weight: bold;
+    padding-bottom: 6vh;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   
+}
+.days, .hours, .minutes, .seconds {
+    font-size: 6vh;
+
+}
+.day, .hour, .minute, .second{
+    padding: 5vh;
+}
