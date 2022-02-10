@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    zoom: 90%;
+    zoom: 95%;
 }
 
 body{
@@ -46,5 +46,5 @@ h2{
 
 }
 .day, .hour, .minute, .second{
-    padding: 5vh;
+    padding: 4vh;
 }
