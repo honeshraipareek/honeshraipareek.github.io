@@ -43,7 +43,16 @@ h2{
 }
 .days, .hours, .minutes, .seconds {
     font-size: 6vh;
+    animation: woosh 2s normal;
+}
+@keyframes woosh{
+    from{
+        color: rgba(255, 255, 255, 0);
+    }
 
+    to{
+        color: rgba(255, 255, 255, 1.0);
+    }
 }
 .day, .hour, .minute, .second{
     padding: 4vh;
