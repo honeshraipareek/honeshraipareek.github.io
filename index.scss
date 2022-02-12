@@ -11,15 +11,16 @@ $lightcolor : #297EA6;
 body{
     font-family: 'Poppins', sans-serif;
     color: white;
+    
 }
 
 .banner {
     background: url("/blob-scene-haikei.svg");
-    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
+    max-height: 100vh;
+    
 
 }
 
@@ -56,14 +57,12 @@ body{
     }
 }
 .bob{
-    position: fixed;
-    margin-left: 9vh;
-    margin-top: 12vh;
-    height: auto;
+    display: block;
     opacity: 0%;
     animation: anim 3s forwards 3s;
     align-items: center;
-    display: flex;
+   
+   
 }
 
 @keyframes anim {
@@ -90,4 +89,17 @@ body{
     font-size: 2vh;
 }
 */
+.tex {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    padding: 15vh;
+    margin-left: 5vh;
+    margin-top: -60vh;
+    width: 50%;
+    align-self: center;
+    display: block;
+}
 
+.des {
+    text-align: right;
+}

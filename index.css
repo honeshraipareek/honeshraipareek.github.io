@@ -11,13 +11,10 @@ body {
 
 .banner {
   background: url("/blob-scene-haikei.svg");
-  min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  max-height: 100vh;
 }
 
 .logo, .name, .Abt {
@@ -69,19 +66,13 @@ body {
 }
 
 .bob {
-  position: fixed;
-  margin-left: 9vh;
-  margin-top: 12vh;
-  height: auto;
+  display: block;
   opacity: 0%;
   -webkit-animation: anim 3s forwards 3s;
           animation: anim 3s forwards 3s;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 @-webkit-keyframes anim {
@@ -118,4 +109,20 @@ body {
     font-size: 2vh;
 }
 */
+.tex {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  padding: 15vh;
+  margin-left: 5vh;
+  margin-top: -60vh;
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: block;
+}
+
+.des {
+  text-align: right;
+}
 /*# sourceMappingURL=index.css.map */
