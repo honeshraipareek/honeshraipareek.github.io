@@ -1,0 +1,89 @@
+$darkcolor : #001829;
+$lightcolor : #297EA6;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.banner {
+    background: url("/blob-scene-haikei.svg");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+
+}
+
+.logo, .name, .Abt {
+    font-size: 1.5vh;
+    margin: 4vh;
+}
+
+.logo, .Abt {
+    opacity : 0%;
+    animation: anim 4s forwards 4s;
+}
+
+.nav{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    animation: moveup 1.5s forwards 1s ;
+}
+
+@keyframes moveup{
+    100% {
+        transform: translateY(-40%);
+    }
+}
+.bob{
+    position: fixed;
+    margin-left: 9vh;
+    min-height: 100vh;
+    opacity: 0%;
+    animation: anim 3s forwards 3s;
+    align-items: center;
+    display: flex;
+}
+
+@keyframes anim {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.type, .design, .gallery {
+    background-color: red;
+    position: fixed;
+    display: block;
+    width: 50%;
+    height: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.type{
+    transform: translateY(300%);
+}
+
+.design{
+    transform: translateY(400%);
+    margin-top: 5vh;
+}
+
+.gallery{
+    transform: translateY(500%);
+    margin-top: 10vh;
+}

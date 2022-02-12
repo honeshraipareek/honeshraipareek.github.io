@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.banner {
+  background: url("/blob-scene-haikei.svg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo, .name, .Abt {
+  font-size: 1.5vh;
+  margin: 4vh;
+}
+
+.logo, .Abt {
+  opacity: 0%;
+  -webkit-animation: anim 4s forwards 4s;
+          animation: anim 4s forwards 4s;
+}
+
+.nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-animation: moveup 1.5s forwards 1s;
+          animation: moveup 1.5s forwards 1s;
+}
+
+@-webkit-keyframes moveup {
+  100% {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+}
+
+@keyframes moveup {
+  100% {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+  }
+}
+
+.bob {
+  position: fixed;
+  margin-left: 9vh;
+  min-height: 100vh;
+  opacity: 0%;
+  -webkit-animation: anim 3s forwards 3s;
+          animation: anim 3s forwards 3s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes anim {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes anim {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.type, .design, .gallery {
+  background-color: red;
+  position: fixed;
+  display: block;
+  width: 50%;
+  height: 10vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.type {
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
+}
+
+.design {
+  -webkit-transform: translateY(400%);
+          transform: translateY(400%);
+  margin-top: 5vh;
+}
+
+.gallery {
+  -webkit-transform: translateY(500%);
+          transform: translateY(500%);
+  margin-top: 10vh;
+}
+/*# sourceMappingURL=index.css.map */
