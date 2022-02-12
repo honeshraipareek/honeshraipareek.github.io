@@ -22,7 +22,7 @@ body {
 
 .logo, .name, .Abt {
   font-size: 1.5vh;
-  margin: 4vh;
+  margin: 8vh;
 }
 
 .logo, .Abt {
@@ -44,26 +44,35 @@ body {
   width: 100%;
   -webkit-animation: moveup 1.5s forwards 1s;
           animation: moveup 1.5s forwards 1s;
+  height: 15vh;
+  -webkit-transform: translateY(250%);
+          transform: translateY(250%);
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
 }
 
 @-webkit-keyframes moveup {
   100% {
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%);
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
   }
 }
 
 @keyframes moveup {
   100% {
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%);
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
   }
 }
 
 .bob {
   position: fixed;
   margin-left: 9vh;
-  min-height: 100vh;
+  margin-top: 12vh;
+  height: auto;
   opacity: 0%;
   -webkit-animation: anim 3s forwards 3s;
           animation: anim 3s forwards 3s;
@@ -93,29 +102,20 @@ body {
   }
 }
 
+/*
 .type, .design, .gallery {
-  background-color: red;
-  position: fixed;
-  display: block;
-  width: 50%;
-  height: 10vh;
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    justify-content: center;
+    align-content: center;
+    font-size: 6vh;
+    
+    height: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.type {
-  -webkit-transform: translateY(300%);
-          transform: translateY(300%);
-}
 
-.design {
-  -webkit-transform: translateY(400%);
-          transform: translateY(400%);
-  margin-top: 5vh;
+.sub {
+    font-size: 2vh;
 }
-
-.gallery {
-  -webkit-transform: translateY(500%);
-          transform: translateY(500%);
-  margin-top: 10vh;
-}
+*/
 /*# sourceMappingURL=index.css.map */

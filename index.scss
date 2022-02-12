@@ -25,7 +25,7 @@ body{
 
 .logo, .name, .Abt {
     font-size: 1.5vh;
-    margin: 4vh;
+    margin: 8vh;
 }
 
 .logo, .Abt {
@@ -39,17 +39,27 @@ body{
     display: flex;
     width: 100%;
     animation: moveup 1.5s forwards 1s ;
+    height: 15vh;
+    transform: translateY(250%);
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+  
 }
 
 @keyframes moveup{
     100% {
-        transform: translateY(-40%);
+        transform: translateY(-20%);
     }
 }
 .bob{
     position: fixed;
     margin-left: 9vh;
-    min-height: 100vh;
+    margin-top: 12vh;
+    height: auto;
     opacity: 0%;
     animation: anim 3s forwards 3s;
     align-items: center;
@@ -64,26 +74,20 @@ body{
         opacity: 100%;
     }
 }
-
+/*
 .type, .design, .gallery {
     background-color: red;
-    position: fixed;
-    display: block;
-    width: 50%;
+    justify-content: center;
+    align-content: center;
+    font-size: 6vh;
+    
     height: 10vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.type{
-    transform: translateY(300%);
-}
 
-.design{
-    transform: translateY(400%);
-    margin-top: 5vh;
+.sub {
+    font-size: 2vh;
 }
+*/
 
-.gallery{
-    transform: translateY(500%);
-    margin-top: 10vh;
-}
