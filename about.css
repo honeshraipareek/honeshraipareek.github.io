@@ -27,10 +27,8 @@ body{
 }
 .sec1{
     height: 50vh;
-    background-color: bisque;
     align-content: center;
-    justify-content: center;
-    align-items: center;
+  
 }
 
 .circle{
@@ -40,6 +38,7 @@ body{
     height: 500px;
     border-radius: 60rem;
     animation: loop 1s forwards infinite ;
+    margin-left: 65vh;
 }
 
 @keyframes loop {
@@ -47,10 +46,7 @@ body{
         transform: scale(0%);
         opacity: 100%;
     }
-    50% {
-        opacity: 50%;
-    }
-
+   
     100% {
         transform: scale(100%);
         opacity: 0%;
