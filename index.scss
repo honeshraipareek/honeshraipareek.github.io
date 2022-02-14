@@ -1,8 +1,7 @@
 $darkcolor : #001829;
 $lightcolor : #297EA6;
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -17,7 +16,7 @@ body{
 }
 
 .banner {
-    background: url("/blob-scene-haikei.svg");
+    background: url("/blob-scene-haikeii.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -31,7 +30,7 @@ body{
 
 .logo, .Abt {
     opacity : 0%;
-    animation: anim 4s forwards 4s;
+    animation: anim 4s forwards 2s;
 }
 
 .nav{
@@ -103,8 +102,9 @@ body{
 
 .headings{
     padding-left: 40vh;
-    padding-top: 5vh;
-
+    padding-top: 1vh;
+    font-family: 'Montserrat', sans-serif;
+    
     h1{
         font-size: 9vh;
     }
@@ -123,7 +123,8 @@ body{
     padding-top: 1vh;
 }
 .des{
-    padding-left: 66vh;
+    padding-left: 69vh;
+    padding-top: 5vh;
 }
 
 .photo{
