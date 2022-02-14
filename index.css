@@ -7,6 +7,8 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: white;
+  overflow-y: hidden;
+  min-height: 100vh;
 }
 
 .banner {
@@ -14,7 +16,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .logo, .name, .Abt {
@@ -44,6 +46,8 @@ body {
   height: 15vh;
   -webkit-transform: translateY(250%);
           transform: translateY(250%);
+  padding: 0%;
+  margin: 0;
 }
 
 .nav a {
@@ -66,13 +70,23 @@ body {
 }
 
 .bob {
-  display: block;
-  opacity: 0%;
-  -webkit-animation: anim 3s forwards 3s;
-          animation: anim 3s forwards 3s;
+  margin-left: 60vh;
+  margin-top: 10vh;
+  height: 60vh;
+  width: 60vh;
+  background: url("/blob-haikei.svg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: -5vh 1.5vh;
+  outline: 2px solid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  background-repeat: no-repeat;
+  opacity: 0%;
+  -webkit-animation: anim 3s forwards 3s;
+          animation: anim 3s forwards 3s;
 }
 
 @-webkit-keyframes anim {
@@ -94,35 +108,51 @@ body {
 }
 
 /*
-.type, .design, .gallery {
-    background-color: red;
-    justify-content: center;
-    align-content: center;
-    font-size: 6vh;
-    
-    height: 10vh;
-    font-family: Arial, Helvetica, sans-serif;
+.tex{
+    position: absolute;
+    top: 15%;
+    color: white;
+    left: 30%;
+    width: 45%;
+    display: flex;
+
+    h1{
+        font-size: 5rem;
+        margin-top: 5vh;
+    }
+
+    .des {
+        float: right;
+    }
+}*/
+.headings {
+  padding-left: 40vh;
+  padding-top: 5vh;
 }
 
-
-.sub {
-    font-size: 2vh;
+.headings h1 {
+  font-size: 9vh;
 }
-*/
-.tex {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  padding: 15vh;
-  margin-left: 5vh;
-  margin-top: -60vh;
-  width: 50%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  display: block;
+
+.headings a {
+  text-decoration: none;
+}
+
+.headings a:visited {
+  color: white;
+}
+
+.type {
+  padding-top: 1vh;
 }
 
 .des {
-  text-align: right;
+  padding-left: 66vh;
+}
+
+.photo {
+  position: absolute;
+  padding-top: 20vh;
+  padding-left: 15vh;
 }
 /*# sourceMappingURL=index.css.map */
