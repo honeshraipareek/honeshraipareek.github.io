@@ -11,7 +11,7 @@ $lightcolor : #297EA6;
 body{
     font-family: 'Poppins', sans-serif;
     color: white;
-    overflow-y: hidden;
+    overflow: hidden;
     min-height: 100vh;
 }
 
@@ -111,24 +111,7 @@ body{
         opacity: 100%;
     }
 }
-/*
-.tex{
-    position: absolute;
-    top: 15%;
-    color: white;
-    left: 30%;
-    width: 45%;
-    display: flex;
 
-    h1{
-        font-size: 5rem;
-        margin-top: 5vh;
-    }
-
-    .des {
-        float: right;
-    }
-}*/
 
 .headings{
     padding-left: 40vh;
@@ -148,15 +131,12 @@ body{
         color: white;
     }
 
-  /*  span{
-        opacity: 0;
-        transition: all 1s ease 4s;
+    div{
+        display: none;
+        font-size: 2vh;
+        justify-content: space-between;
     }
 
-    span.fade{
-        opacity: 1;
-    }*/
-    
 }
 .type{
     margin-top: 1vh;
@@ -188,11 +168,64 @@ body{
     }
 }
 
-.github{
-    outline: 2px solid;
-    transform: rotate(90deg);
-    left: 0%;
+.social{
     position: absolute;
+    width: 100%;
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25vh;
+    div{
+        align-items: center;
+        display: flex;
+        
+    }
+
+    a{
+        text-decoration: none;
+    }
+    a:visited {
+        color: white;
+    }
 }
+.github{
+    transform:  translateX(-8vh);
+    animation: git 1s forwards 2s;
+    transition: all ease-in-out 0.5s;
+}   
+
+.github:hover{
+    transform: scale(140%);
+}
+
+@keyframes git {
+    100% {
+        transform: rotate(-90deg) translateY(0vh);
+    }
+}
+.behance{
+    position: fixed;
+    left: 48%;
+    bottom: 2%;
+    transform: translateY(5vh);
+    align-content: center;
+    animation: beh 1s forwards 2s;
+}
+
+@keyframes beh {
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+.linkedin {
+    transform: translateX(8vh);
+    animation: lin 1s forwards 2s;
+}
+
+@keyframes lin {
+    100%{
+        transform: rotate(90deg) translateY(0vh);
+    }
+}
+

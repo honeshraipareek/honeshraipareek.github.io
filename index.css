@@ -8,7 +8,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: white;
-  overflow-y: hidden;
+  overflow: hidden;
   min-height: 100vh;
 }
 
@@ -150,36 +150,10 @@ body {
   }
 }
 
-/*
-.tex{
-    position: absolute;
-    top: 15%;
-    color: white;
-    left: 30%;
-    width: 45%;
-    display: flex;
-
-    h1{
-        font-size: 5rem;
-        margin-top: 5vh;
-    }
-
-    .des {
-        float: right;
-    }
-}*/
 .headings {
   padding-left: 40vh;
   padding-top: 1vh;
   font-family: 'Montserrat', sans-serif;
-  /*  span{
-        opacity: 0;
-        transition: all 1s ease 4s;
-    }
-
-    span.fade{
-        opacity: 1;
-    }*/
 }
 
 .headings h1 {
@@ -192,6 +166,14 @@ body {
 
 .headings a:visited {
   color: white;
+}
+
+.headings div {
+  display: none;
+  font-size: 2vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .type {
@@ -234,14 +216,110 @@ body {
   }
 }
 
-.github {
-  outline: 2px solid;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  left: 0%;
+.social {
   position: absolute;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.25vh;
+}
+
+.social div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social a:visited {
+  color: white;
+}
+
+.github {
+  -webkit-transform: translateX(-8vh);
+          transform: translateX(-8vh);
+  -webkit-animation: git 1s forwards 2s;
+          animation: git 1s forwards 2s;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.github:hover {
+  -webkit-transform: scale(140%);
+          transform: scale(140%);
+}
+
+@-webkit-keyframes git {
+  100% {
+    -webkit-transform: rotate(-90deg) translateY(0vh);
+            transform: rotate(-90deg) translateY(0vh);
+  }
+}
+
+@keyframes git {
+  100% {
+    -webkit-transform: rotate(-90deg) translateY(0vh);
+            transform: rotate(-90deg) translateY(0vh);
+  }
+}
+
+.behance {
+  position: fixed;
+  left: 48%;
+  bottom: 2%;
+  -webkit-transform: translateY(5vh);
+          transform: translateY(5vh);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-animation: beh 1s forwards 2s;
+          animation: beh 1s forwards 2s;
+}
+
+@-webkit-keyframes beh {
+  100% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
+@keyframes beh {
+  100% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+}
+
+.linkedin {
+  -webkit-transform: translateX(8vh);
+          transform: translateX(8vh);
+  -webkit-animation: lin 1s forwards 2s;
+          animation: lin 1s forwards 2s;
+}
+
+@-webkit-keyframes lin {
+  100% {
+    -webkit-transform: rotate(90deg) translateY(0vh);
+            transform: rotate(90deg) translateY(0vh);
+  }
+}
+
+@keyframes lin {
+  100% {
+    -webkit-transform: rotate(90deg) translateY(0vh);
+            transform: rotate(90deg) translateY(0vh);
+  }
 }
 /*# sourceMappingURL=index.css.map */
