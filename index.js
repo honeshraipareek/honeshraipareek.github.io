@@ -6,8 +6,13 @@ const des = document.querySelector(".des");
 const strdes = des.textContent;
 const desarray = strdes.split("");
 
+const photo = document.querySelector(".photo");
+const strphoto = photo.textContent;
+const photoarray = strphoto.split("");
+
 type.textContent = "";
 des.textContent = "";
+photo.textContent = "";
 
     for(i = 0; i<typearray.length; i++){
     type.innerHTML += "<span>" + typearray[i] + "</span>"
@@ -17,30 +22,75 @@ des.textContent = "";
         des.innerHTML += "<span>" + desarray[j] + "</span>"
     }
 
+    for(k = 0; k<photoarray.length; k++) {
+        photo.innerHTML += "<span>" + photoarray[k] + "</span>"
+    }
+
 let char = 0;
 let charr = 0;
-let timer = setInterval(fadeclass, 50);
+let charrr = 0;
+let timer = setInterval(fadetyp, 20);
+let timerr = setInterval(fadedes, 20);
+let timerrr = setInterval(fadephoto, 20);
 
-function fadeclass() {
-    const str = type.querySelectorAll("span")[char]
-    const strr = des.querySelectorAll("span")[charr]
+function fadetyp() {
+    const str = type.querySelectorAll("span")[char];
 
     str.classList.add('fade');
-    strr.classList.add('fade');
 
     char++;
-    charr++;
     
         if(char === typearray.length){
             complete();
             return;
         }
-}
+        else{
+            fadetyp();
+        }
+};
+
+function fadedes() {
+    let stri = des.querySelectorAll('span')[charr];
+    stri.classList.add('fade');
+
+    charr++;
+    
+        if(charr === desarray.length){
+            completee();
+            return;
+        }
+};
+
+function fadephoto() {
+    let strii = photo.querySelectorAll('span')[charrr];
+    strii.classList.add('fade');
+
+    charrr++;
+
+        if(charrr === photoarray.length){
+            completeee();
+            return
+        }
+};
+
+
+
 
 function complete(){
     clearInterval(timer);
     timer = null;
+    
 }
 
-console.log(typearray)
-console.log(char)
+function completee(){
+    clearInterval(timerr);
+    timerr = null;
+}
+
+function completeee(){
+    clearInterval(timerrr);
+    timerrr = null;
+}
+
+const blob = document.getElementsByClassName('bob')
+blob

@@ -25,10 +25,35 @@ body {
   margin: 8vh;
 }
 
+.name {
+  font-size: 4vh;
+  -webkit-animation: honesh 1.5s forwards 1s;
+          animation: honesh 1.5s forwards 1s;
+}
+
+@-webkit-keyframes honesh {
+  100% {
+    font-size: 1.5vh;
+  }
+}
+
+@keyframes honesh {
+  100% {
+    font-size: 1.5vh;
+  }
+}
+
 .logo, .Abt {
   opacity: 0%;
   -webkit-animation: anim 4s forwards 2s;
           animation: anim 4s forwards 2s;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.Abt:hover, .logo:hover {
+  -webkit-transform: scale(130%);
+          transform: scale(130%);
 }
 
 .nav {
@@ -79,15 +104,32 @@ body {
   background-size: 100%;
   background-attachment: fixed;
   background-position: -5vh 1.5vh;
-  outline: 2px solid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
   background-repeat: no-repeat;
   opacity: 0%;
-  -webkit-animation: anim 3s forwards 3s;
-          animation: anim 3s forwards 3s;
+  -webkit-animation: animate 3s forwards 2s;
+          animation: animate 3s forwards 2s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 @-webkit-keyframes anim {
@@ -130,6 +172,14 @@ body {
   padding-left: 40vh;
   padding-top: 1vh;
   font-family: 'Montserrat', sans-serif;
+  /*  span{
+        opacity: 0;
+        transition: all 1s ease 4s;
+    }
+
+    span.fade{
+        opacity: 1;
+    }*/
 }
 
 .headings h1 {
@@ -145,17 +195,53 @@ body {
 }
 
 .type {
-  padding-top: 1vh;
+  margin-top: 1vh;
 }
 
 .des {
-  padding-left: 69vh;
-  padding-top: 5vh;
+  margin-left: 69vh;
+  margin-top: 5vh;
 }
 
 .photo {
   position: absolute;
-  padding-top: 20vh;
-  padding-left: 15vh;
+  margin-top: 20vh;
+  margin-left: 15vh;
+}
+
+.fade {
+  position: relative;
+  opacity: 0%;
+  -webkit-transform: translateX(-3vh) translateY(-3vh);
+          transform: translateX(-3vh) translateY(-3vh);
+  -webkit-animation: appear 2s forwards normal 4s;
+          animation: appear 2s forwards normal 4s;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateX(3vh) translateY(3vh);
+            transform: translateX(3vh) translateY(3vh);
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateX(3vh) translateY(3vh);
+            transform: translateX(3vh) translateY(3vh);
+  }
+}
+
+.github {
+  outline: 2px solid;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: 0%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=index.css.map */

@@ -26,11 +26,31 @@ body{
 .logo, .name, .Abt {
     font-size: 1.5vh;
     margin: 8vh;
+    
+}
+
+.name{
+    font-size: 4vh;
+    animation: honesh 1.5s forwards 1s;
+}
+
+@keyframes honesh {
+
+    100%{
+        font-size: 1.5vh;
+    }
 }
 
 .logo, .Abt {
     opacity : 0%;
     animation: anim 4s forwards 2s;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.Abt:hover, .logo:hover {
+    transform: scale(130%);
+    
 }
 
 .nav{
@@ -65,12 +85,22 @@ body{
     background-size: 100%;
     background-attachment: fixed;
     background-position: -5vh 1.5vh;
-    outline: 2px solid;
+   
     align-items: center;
     position: absolute;
     background-repeat: no-repeat;
     opacity: 0%;
-    animation:  anim 3s forwards 3s;
+    animation:  animate 3s forwards 2s;
+    
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 
 @keyframes anim {
@@ -117,18 +147,52 @@ body{
     a:visited{
         color: white;
     }
+
+  /*  span{
+        opacity: 0;
+        transition: all 1s ease 4s;
+    }
+
+    span.fade{
+        opacity: 1;
+    }*/
     
 }
 .type{
-    padding-top: 1vh;
+    margin-top: 1vh;
 }
 .des{
-    padding-left: 69vh;
-    padding-top: 5vh;
+    margin-left: 69vh;
+    margin-top: 5vh;
 }
 
 .photo{
     position: absolute;
-    padding-top: 20vh;
-    padding-left: 15vh;
+    margin-top: 20vh;
+    margin-left: 15vh;
+}
+
+
+.fade{
+    position: relative;
+    opacity: 0%;
+    transform: translateX(-3vh) translateY(-3vh);
+    animation: appear 2s forwards normal 4s
+}
+
+@keyframes appear {
+  
+    100% {
+        opacity: 100%;
+        transform: translateX(3vh) translateY(3vh);
+    }
+}
+
+.github{
+    outline: 2px solid;
+    transform: rotate(90deg);
+    left: 0%;
+    position: absolute;
+    display: flex;
+    
 }
