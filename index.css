@@ -15,12 +15,11 @@ body{
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
-    height: 100vw;
-
+    overflow-y: hidden;
 }
 
 .page{
-    min-height: 100vh;
+    max-height: 100vh;
     position: relative;
 
 }
