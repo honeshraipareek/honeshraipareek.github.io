@@ -148,4 +148,13 @@ a {
     .type, .des, .phot{
         padding-left: 0;
     }
-}
+    
+    .body{
+      max-height: 100vh;
+      overflow: hidden;
+    }
+
+    .page{
+      max-height: 100vh;
+    }
+  }
