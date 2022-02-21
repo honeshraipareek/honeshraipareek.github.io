@@ -10,11 +10,12 @@
 
 
 body{
-    margin: 3rem;
+    margin: 2vw;
     background: url('/blob-scene-haikei.svg');
     background-attachment: fixed;
     background-size: cover;
-   overflow: hidden;
+    overflow: hidden;
+    height: 100vh;
 
 }
 
