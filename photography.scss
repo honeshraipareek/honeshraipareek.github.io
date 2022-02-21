@@ -1,34 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
-*{
-    margin: 0px;
-    padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-body{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-
-.logo, .name, .Abt {
-    font-size: 1.5vh;
-    
-}
-
-.nav{
-    background-color: antiquewhite;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    height: 5vh;
-    padding: 8vh;
-    padding-top: 3vh;
-    a{
-        color: black;
-        text-decoration: none;
-    }
+  }
+  main {
+    font-family: "Heebo", sans-serif;
+  }
+  
+  .landing {
+    min-height: 100vh;
+    padding: 0rem 5rem;
+  }
 
   
-}
+  .big-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    font-family: "Heebo", sans-serif;
+    color: rgb(61, 61, 61);
+  }
+  
+  .intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .slider {
+    background: rgb(97, 105, 109);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  
+  .intro-text {
+    color: rgb(233, 233, 233);
+    font-family: "Heebo", sans-serif;
+    font-size: 5vh;
+  }
+  
+  .hide {
+    background: black;
+    overflow: hidden;
+   
+  }
+  
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+
+  //gallery Structuring
+  .page{
+    overflow-x: hidden;
+  }
+
+  .gallery{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      text-transform: uppercase;
+
+      h1{
+        font-family: 'Alfa Slab One', cursive;
+        background-size: 300%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 5vh;
+        animation: grad 3s alternate infinite;
+      }
+  }
+
+  img{
+      width: 100%;
+  }
+
+  .mono{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);;
+   
+  }
+
+  .cof{
+    background: #C02425;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  @keyframes grad {
+    0%{
+      background-position: 0%;
+    }
+
+    100%{
+      background-position: 100%;
+    }
+  }
