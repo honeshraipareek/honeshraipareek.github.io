@@ -11,7 +11,7 @@
 
 body{
     margin: 3rem;
-    background: url('./blob-scene-haikei.svg');
+    background: url('/blob-scene-haikei.svg');
     background-attachment: fixed;
     background-size: cover;
    overflow: hidden;
