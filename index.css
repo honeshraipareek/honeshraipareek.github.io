@@ -15,12 +15,10 @@ body{
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
-    overflow-y: hidden;
 }
 
 .page{
-    max-height: 100vh;
-    position: relative;
+    max-height: 100vw;
 
 }
 .nave{
@@ -78,8 +76,8 @@ body{
 a {
     text-decoration: none;
  }
- a:hover{ 
-     color: chartreuse;
+ a::after:hover{ 
+     color: white;
  }
  a:visited{
      color: white;
@@ -127,7 +125,7 @@ a {
     font-size: 1.25vw;
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width: 500px) {
     .bob{
         width: 250%;
         margin-top: 12vw;
@@ -148,13 +146,10 @@ a {
     .type, .des, .phot{
         padding-left: 0;
     }
-    
-    .body{
-      max-height: 100vh;
-      overflow: hidden;
-    }
-
     .page{
-      max-height: 100vh;
+        min-height: 100vh;
+    }
+    .nave{
+      font-size: 2vw;
     }
   }

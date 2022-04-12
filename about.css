@@ -38,7 +38,7 @@ body{
     height: 500px;
     border-radius: 60rem;
     animation: loop 1s forwards infinite ;
-    margin-left: 65vh;
+    margin-left: 40vw;
 }
 
 @keyframes loop {
