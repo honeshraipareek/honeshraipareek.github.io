@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.nave{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+   padding: 2vw;
+}
+
+.nave img{
+    width: 3vw;
+}
+.nave h1{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 0.75vw;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nave a{
+    text-decoration: none;
+    color: black;
+    
+}
+a :hover{
+  color: black;
+}
+
+a :visited{
+    color: black;
+    
+}
+
+.gallery{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  zoom: 67%;
+}
+
+img{
+  width: 100%;
+}
+
+.fllex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
