@@ -101,13 +101,15 @@ body{
 
 .title{
     color: grey;
-    font-weight: 600;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
 
 }
 
 .main{
-    font-size: 5vw;
+    font-size: 6vw;
     text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .icons{
