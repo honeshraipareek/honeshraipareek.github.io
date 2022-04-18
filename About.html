@@ -7,10 +7,11 @@
     <title>Know more about me</title>
     <link rel="stylesheet" href="about.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
 </head>
 <body>
    
-        <div class="nave">
+        <div class="nave sticky-top bg-white w-100">
              <span class="logo"><img src="/RudySign.png" alt="" style="width: 5vh;"></span>
              <span class="name"><a> HONESH RAI PAREEK </a></span>
              <span class="Abt"><a href="/birthday.html" style="color: black; text-decoration: none;"> About मी </a></span>
@@ -27,13 +28,18 @@
     </section>
 
     <section class="gridd container-fluid">
-        <div class="row">
-            <div class="col-5 cell">
+        <div class="row" style="height: 100vh;">
+            <div class="col-5">
+                <div class="cell">
                <div class="title">Height</div>
                <div class="main"  style="font-size: 12vw;"> 6'2</div>
+               </div>
+               <div class="cell">
+                   <div class="title"></div>
+               </div>
             </div>
             <div class="col-3">
-                <div class="row">
+                <div>
                     <div class="cell">
                         <div class="title">Age</div>
                         <div class="main">20</div>
@@ -49,34 +55,57 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="row">
-                    <div class="cell">
-                        <div class="title">Age</div>
-                        <div class="main">20</div>
+               
+                    <div class="cell container-fluid">
+                        <p class="title">I'm from</p>
+                        <p class="main" style="font-size: 3vw;">Jaipur</p>
+                        <p class="main" style="font-size: 3vw;">City</p>
                     </div>
                     <div class="cell">
-                        <div class="title">Age</div>
-                        <div class="main">20</div>
+                        <div class="title">What I Do?</div>
+                        <div class="main"><p style="font-size: 2vw;"><b>Sophomore Year</b> <p style="font-size: 1.5vw;">Communication Design</p></p></div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-7 skills">
-                <div class="title">Skillset</div>
-                <div class="icons">
-                    <img src="/After Effects.png" alt="">
-                    <img src="/Illustrator.png" alt="">
-                    <img src="/InDesign.png" alt="">
-                    <img src="/Lightroom.png" alt="">
-                    <img src="/Photoshop.png" alt="">
-                    <img src="/Premiere.png" alt="">
-                    <img src="https://miro.medium.com/max/1400/1*6XgfDCVn81AYX68Xvd2I-g@2x.png" alt="">
-
-                </div>
             </div>
         </div>
     </section>
+<section>
+    <div class="title mt-5"> Skillset </div>
+    <div class="container-fluid skills ">
+        <div class="col-8">
+            <img src="/After Effects.png" alt="">
+            <img src="/Illustrator.png" alt="">
+            <img src="/Photoshop.png" alt="">
+            <img src="/Premiere.png" alt="">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+         
+          
+          
+        </div>
+    </div>
+</section>
+    <section class="container">
+       
+        <h2 id="wish">Countdown for my 21st:</h2>
+        <div class="countdown">
+            <div class="day">
+                <h3 class="days"></h3>
+                <h3>Days</h3>
+            </div>
+            <div class="hour">
+                <h3 class="hours"></h3>
+                <h3>Hours</h3>
+            </div>
+            <div class="minute">
+                <h3 class="minutes"></h3>
+                <h3>Minutes</h3>
+            </div>
+            <div class="second">
+                <h3 class="seconds"></h3>
+                <h3>Seconds</h3>
+            </div>
+        </div>
+</section>
+<script src="date.js">
+</script>
 </body>
 </html>

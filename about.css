@@ -12,12 +12,33 @@ body{
     padding-left: 12vw;
     padding-right: 12vw;
 }
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   
+}
+.days, .hours, .minutes, .seconds {
+    font-size: 6vh;
+}
+.day, .hour, .minute, .second{
+    padding: 4vh;
+}
 
 .nave{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1vw;
+    margin-top: 1vw;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
@@ -27,7 +48,7 @@ body{
     
 }
 .sec1{
-    height: 50vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +70,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   margin-right: 1vw;
   margin-bottom: 1vw;
@@ -63,18 +84,24 @@ body{
     font-style: italic;
     font-weight: bolder;
     margin: -2vw;
+    z-index: 1;
+}
+
+.fn{
+    color: rgb(145, 61, 100);
 }
 
 .mn{
     justify-content: center;
     color: white;
-    z-index: 1;
+    z-index: 3;
     font-size: 4vw;
 }
 
 .ln{
     justify-content: right;
     margin-left: 1vw;
+    color: rgb(123, 204, 212);
 }
 
 @keyframes loop {
@@ -92,11 +119,15 @@ body{
 .cell{
    background-color: rgb(242, 242, 242);
    margin: 0.5vw;
-   box-shadow: 5px 5px 8px #aaaaaa;
+   box-shadow: 3px 3px 15px #aaaaaa;
    border-radius: 2vw;
    display: flex;
+   justify-content: center;
+   overflow: hidden;
    flex-direction: column;
    padding-top: 3vw;
+   height: 50%;
+   padding: 2vw;
 }
 
 .title{
@@ -112,11 +143,16 @@ body{
     font-family: 'Orbitron', sans-serif;
 }
 
-.icons{
-    display: flex;
-    width: 100%;
-    background-color: bisque;
+.skills img{
+width: 10%;
+
 }
-.icons img{
-    width: 15%;
+
+.skills{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #aaaaaa;
+    
 }
