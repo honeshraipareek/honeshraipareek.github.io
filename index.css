@@ -1,49 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 *{
-    margin:0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
-
-
-
 body{
-    margin: 2vw;
-    background: url('/blob-scene-haikei.svg');
-    background-attachment: fixed;
-    background-size: cover;
+    
     overflow: hidden;
-}
-
-.page{
-    max-height: 100vw;
-
-}
-.nave{
-    height: 4vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-   padding: 2vw;
-}
-
-.nave img{
-    width: 3vw;
-}
-.nave h1{
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    background-image: url("/blob-scene-haikei.svg");
+    background-size: cover;
     color: white;
-    font-size: 0.75vw;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
-.bob{
-    width: 100%;
+.pagee{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2vw;
+   
+}
+
+.blob{
+    align-items: center;
+    justify-content: center;
     position: absolute;
     z-index: -1;
     animation: anim 3s alternate infinite;
@@ -56,101 +39,96 @@ body{
         transform: rotate(15deg);
     }
 }
-.big-text{
-    font-size: 7vw;
-    font-family: 'Dosis', sans-serif;
 
+.nav{
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75vw;
+    align-items: center;
+    font-weight: 500;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: white;
+}
+
+
+.pagee a{
+    color: white;
+    text-decoration: none;
+}
+
+.pagee a:hover{
+    color: white;
+}
+
+.main{
+    font-size: 7vw;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.sub{
+    color: rgb(141, 141, 141);
+    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -1.5vw;
+    font-weight: 500;
 }
 
 .type{
-    padding-left: 30vw;
+    margin-right: 25vw;
+    z-index: 2;
 }
 
 .des{
-    padding-left: 62vw;
+    margin-left: 35vw;
+    z-index: 4;
 }
+
 .phot{
-    padding-left: 20vw;
-    
+    margin-right: 5vw;
+    z-index: 2;
 }
 
-a {
-    text-decoration: none;
- }
- a:hover{ 
-     color: white;
- }
- a:visited{
-     color: white;
- }
-
-
-/* @media (max-width: 30rem){
-    .bob{
-        width: 200%;
-        margin-top: 20vh;
-    }
-} */
 .profiles{
+    position: absolute;
     display: flex;
-    position: fixed;
-    justify-content: space-between;
-    top: 50%;
-}
-.links{
-    display: flex;
-    align-content: center;
-    color: white;
-    justify-content: center;
-    /* transform: rotate(90deg) translateY(45vw) translateX(-40vw); */
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+   
 }
 
 .github{
-    transform: rotate(90deg);
+    align-items: center;
+    display: flex;
+    justify-content: left;
 }
 
 .linkin{
-    transform: rotate(-90deg);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 3vw;
 }
 
-
-.links img{
-    width: 1vw;
+.behance{
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    
 }
 
-.sml-link{
-    font-size: 0.75vw;
+.profiles img{
+    width: 20%; margin: 0.5vw;
 }
 
-.small-text{
-    font-size: 1.25vw;
-}
-
-@media only screen and (max-width: 500px) {
-    .bob{
-        width: 250%;
-        margin-top: 12vw;
-        margin-left: -120vw;
-    }
-
-    .big-text{
-        font-size: 15vw;
-    }
-
-    .small-text{
-        font-size: 3vw;
-    }
-    .container-fluid{
-        text-align: center;
-    }
-
-    .type, .des, .phot{
-        padding-left: 0;
-    }
-    .page{
-        min-height: 100vh;
-    }
-    .nave{
-      font-size: 2vw;
-    }
-  }

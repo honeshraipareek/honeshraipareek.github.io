@@ -91,6 +91,3 @@ function completeee(){
     clearInterval(timerrr);
     timerrr = null;
 }
-
-const blob = document.getElementsByClassName('bob')
-blob

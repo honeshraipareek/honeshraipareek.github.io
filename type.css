@@ -1,0 +1,124 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.nave{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+   padding: 2vw;
+}
+
+.nave img{
+    width: 3vw;
+}
+.nave h1{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 1vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nave a{
+    text-decoration: none;
+    color: black;
+    
+}
+a :hover{
+  color: black;
+}
+
+a :visited{
+    color: black;
+    
+}
+
+.pagee{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.headingg{
+    font-size: 7vw;
+  
+    margin-left: 4vw;
+}
+
+.qoute{
+    font-size: 1vw;
+    color: rgb(181, 181, 181);
+    margin-left: 8vw;
+    font-weight: 700;
+    margin-top: 1vw;
+}
+
+.author{
+    font-size: 1vw;
+    margin-left: 30vw;
+    color: orange;
+    font-weight: 600;
+}
+
+.row{   
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 12vw;
+}
+
+
+
+.box{
+    border-radius: 50px;
+    transition: transform .5s; 
+}
+
+.box img{
+    width: 80%;
+    margin-left: 2vw;
+}
+
+.box:hover{
+    transform: scale(1.2);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.banner1{
+    min-height: 20vw;
+    background: url("/poster.jpg");
+    background-size: 100%;
+    background-position: 60%;
+}
+
+.banner2{
+    min-height: 20vw;
+    background: url("/ekchaturnaar-07.jpg");
+    background-size: 100%;
+    background-position: 0%, 40%;
+}
+
+.banner2{
+    min-height: 20vw;
+    background: url("/hands.jpg");
+    background-size: 100%;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    
+}
