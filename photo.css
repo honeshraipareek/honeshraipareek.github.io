@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 *{
     margin:0;
@@ -6,8 +7,58 @@
     box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
 
+.first{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+  font-weight: 600;
+  position: absolute;
+  background-color: white;
+  transition: opacity 1s ease 3s;
+  opacity: 0;
+  animation: appear 3s ;
+  z-index: -2;
 
+  
+}
+.big-text{
+
+    animation-direction: alternate;
+}
+
+@keyframes appear {
+  0%{
+      opacity: 0;
+  }
+
+  50%{
+      opacity: 100;
+  }
+
+  100%{
+      opacity: 0;
+  }
+}
+
+.gallery{
+  opacity: 0;
+  animation: des 0.5s forwards 4s;
+
+}
+
+@keyframes des {
+  100%{
+      opacity: 100;
+  }
+}
 
 .nave{
     height: 4vh;
@@ -24,7 +75,8 @@
 .nave h1{
     font-family: 'Poppins', sans-serif;
     color: black;
-    font-size: 0.75vw;
+    font-size: 1vw;
+    font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
 }
