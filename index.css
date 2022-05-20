@@ -44,9 +44,21 @@ body{
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-size: 0.75vw;
+    font-size: 0.85vw;
     align-items: center;
-    font-weight: 500;
+    font-weight: 400;
+
+    animation: appear 1s ease-in forwards;
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
 }
 
 .nav a{
@@ -56,6 +68,8 @@ body{
 
 .nav a:hover{
     color: white;
+    transform: scale(120%);
+    transition: scale, 1s ;
 }
 
 
@@ -104,13 +118,32 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-   
 }
 
 .github{
     align-items: center;
+    position: relative;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    /* transform: rotate(-90deg); */
+    animation: git 1s ease-in 2s forwards;
+    justify-content: center;
+    transform: translateX(-15vw);
+    opacity: 0;
+   
+}
+
+@keyframes git{
+    0% {
+        transform: rotate(0);
+
+   
+    }
+
+    100%{
+        transform: rotate(-90deg);
+        opacity: 100;
+    }
 }
 
 .linkin{
@@ -124,11 +157,12 @@ body{
 .behance{
     align-items: center;
     display: flex;
-    justify-content: right;
-    
+    justify-content: center;
+    transform: rotate(90deg);
 }
 
 .profiles img{
-    width: 20%; margin: 0.5vw;
+    width: 20%;
+    margin: 0.5vw;
 }
 

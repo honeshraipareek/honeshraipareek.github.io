@@ -1,5 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.first{
+    display: flex;
+    height: 95vh;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    position: absolute;
+    background-color: white;
+    transition: opacity 1s ease 3s;
+    opacity: 0;
+    animation: appear 3s ;
+    z-index: -2;
+ 
+    
+}
+.big-text{
+  
+      animation-direction: alternate;
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 100;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.nave{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: 99.5%;
+    transition: opacity 1s, ease 4s;
+    opacity: 100;
+    
+}
+
+.logo, .name, .Abt {
+    font-size: 1.5vh;
+    
+}
+
+.works{
+    width: 80%;
+    height: 30vh;
+    margin: 1vw;
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.ekchatur{
+    background: url("/ekchaturnaar-03.jpg");
+    background-size: cover;
+    background-position: 60% 40%;
+}
+
+.musicapp{
+    background: url("/musicapp/Group-2.png");
+    background-size: cover;
+    background-position: 60% 40%;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6vw;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+    border-radius: 20px;
+} 
+
+.overlay:hover{
+  
+    opacity: 0.75;
+    transition: opacity 0.5 ease-in-out;
+}
+
+.design{
+    opacity: 0;
+    animation: des 0.5s forwards 4s;
+
+}
+
+@keyframes des {
+    100%{
+        opacity: 100;
+    }
+}
+
+.content{
+    z-index: 3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.content h1{
+    font-size: 2vw;
+}
+
+.content a{
+    color: white;
+    font-size: 1vw;
+    font-weight: 500;
+    justify-content: flex-end;
 }

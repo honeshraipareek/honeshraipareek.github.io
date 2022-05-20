@@ -1,93 +1,22 @@
-const type = document.querySelector(".type");
-const strtype = type.textContent;
-const typearray = strtype.split("");
+const nave = document.querySelector(".nav");
+const blobe = document.querySelector(".blob");
+const links = document.querySelector(".type");
+const github = document.querySelector(".github");
+const linkedin = document.querySelector(".linkin");
+const behance = document.querySelector(".behance");
 
-const des = document.querySelector(".des");
-const strdes = des.textContent;
-const desarray = strdes.split("");
+const tl = new TimelineMax();
 
-const photo = document.querySelector(".photo");
-const strphoto = photo.textContent;
-const photoarray = strphoto.split("");
+// tl.fromTo(
+//     nave, 
+//     2, 
+//     {opacity: "0%"}, 
+//     {opacity: "100%",  ease: Power2.easeInOut});
 
-type.textContent = "";
-des.textContent = "";
-photo.textContent = "";
+// .fromTo(
+//     blobe,
+//     2,
 
-    for(i = 0; i<typearray.length; i++){
-    type.innerHTML += "<span>" + typearray[i] + "</span>"
-}
+// )
 
-    for(j = 0; j<desarray.length; j++){
-        des.innerHTML += "<span>" + desarray[j] + "</span>"
-    }
-
-    for(k = 0; k<photoarray.length; k++) {
-        photo.innerHTML += "<span>" + photoarray[k] + "</span>"
-    }
-
-let char = 0;
-let charr = 0;
-let charrr = 0;
-let timer = setInterval(fadetyp, 20);
-let timerr = setInterval(fadedes, 20);
-let timerrr = setInterval(fadephoto, 20);
-
-function fadetyp() {
-    const str = type.querySelectorAll("span")[char];
-
-    str.classList.add('fade');
-
-    char++;
-    
-        if(char === typearray.length){
-            complete();
-            return;
-        }
-        else{
-            fadetyp();
-        }
-};
-
-function fadedes() {
-    let stri = des.querySelectorAll('span')[charr];
-    stri.classList.add('fade');
-
-    charr++;
-    
-        if(charr === desarray.length){
-            completee();
-            return;
-        }
-};
-
-function fadephoto() {
-    let strii = photo.querySelectorAll('span')[charrr];
-    strii.classList.add('fade');
-
-    charrr++;
-
-        if(charrr === photoarray.length){
-            completeee();
-            return
-        }
-};
-
-
-
-
-function complete(){
-    clearInterval(timer);
-    timer = null;
-    
-}
-
-function completee(){
-    clearInterval(timerr);
-    timerr = null;
-}
-
-function completeee(){
-    clearInterval(timerrr);
-    timerrr = null;
-}
+console.log(2+2);
