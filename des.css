@@ -12,6 +12,7 @@ body{
 }
 
 .first{
+    overflow-y: hidden;
     display: flex;
     height: 95vh;
     width: 95vw;
@@ -67,7 +68,7 @@ body{
 .works{
     width: 80%;
     height: 30vh;
-    margin: 1vw;
+    margin: 1.5vw;
     position: relative;
     border-radius: 20px;
 
@@ -90,13 +91,18 @@ body{
     padding-top: 6vw;
 }
 
+.heed{
+    display: flex;
+    font-size: 7vw;
+}
+
 .overlay{
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: black;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease;
     z-index: 1;
     border-radius: 20px;
 } 
@@ -104,7 +110,7 @@ body{
 .overlay:hover{
   
     opacity: 0.75;
-    transition: opacity 0.5 ease-in-out;
+    transition: opacity 0.25 ease;
 }
 
 .design{
@@ -113,9 +119,23 @@ body{
 
 }
 
+.heading{
+    z-index: 4;
+    position: absolute;
+    height: 102%;
+    width: 100%;
+    background: #fff;
+    mix-blend-mode: screen;
+}
+
 @keyframes des {
+    0%{
+        overflow-y: hidden ;
+    }
+
     100%{
         opacity: 100;
+        overflow-y: visible;
     }
 }
 
@@ -138,4 +158,6 @@ body{
     font-size: 1vw;
     font-weight: 500;
     justify-content: flex-end;
+    margin-top: 2vw;
 }
+
