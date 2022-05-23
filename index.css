@@ -31,6 +31,13 @@ body{
     z-index: -1;
     animation: anim 3s alternate infinite;
 }
+
+.b1{
+    animation-duration: 3.1s;
+}
+.b2{
+    animation-duration: 3.2s;
+}
 @keyframes anim{
     from{
         transform: rotate(0deg);
@@ -46,7 +53,7 @@ body{
     text-transform: uppercase;
     font-size: 0.85vw;
     align-items: center;
-    font-weight: 400;
+    font-weight: 500;
     z-index: 2;
     animation: appear 1s ease-in forwards;
 }
