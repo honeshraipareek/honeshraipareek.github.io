@@ -93,7 +93,7 @@ a :hover{
 a :visited{
     color: black;
     
-}
+}   
 
 .gallery{
   margin-left: 15vw;
@@ -110,3 +110,4 @@ img{
   justify-content: center;
   align-items: center;
 }
+

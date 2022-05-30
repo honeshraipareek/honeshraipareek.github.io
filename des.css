@@ -19,7 +19,8 @@ body{
     width: 95vw;
     justify-content: center;
     align-items: center;
-    font-size: 2vw;
+    font-size: 5vw;
+    font-weight: 700;
     position: absolute;
     background-color: white;
     transition: opacity 1s ease 3s;
@@ -72,7 +73,7 @@ body{
     height: 30vh;
     margin: 1.5vw;
     position: relative;
-    border-radius: 20px;
+    
 
 }
 
@@ -82,7 +83,7 @@ body{
     height: 100%;
     object-fit: cover;
     position: absolute;
-    border-radius: 20px;
+    
 
 }
 .pagee{
@@ -91,6 +92,8 @@ body{
     flex-direction: column;
     align-items: center;
     padding-top: 6vw;
+    opacity: 0;
+    animation: des 3s forwards 4s;
 }
 
 .heed{
@@ -106,7 +109,7 @@ body{
     opacity: 0;
     transition: opacity 1s ease;
     z-index: 1;
-    border-radius: 20px;
+    
     padding: 0 30px 0;;
 } 
 
