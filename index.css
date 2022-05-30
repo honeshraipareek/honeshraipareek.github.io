@@ -33,12 +33,6 @@ body{
     animation: anim 3s alternate infinite;
 }
 
-.b1{
-    animation-duration: 3.1s;
-}
-.b2{
-    animation-duration: 3.2s;
-}
 @keyframes anim{
     from{
         transform: rotate(0deg);
@@ -57,6 +51,8 @@ body{
     font-weight: 500;
     z-index: 2;
     animation: appear 1s ease-in forwards;
+    position: fixed;
+    top: 0;
 }
 
 @keyframes appear{
@@ -120,58 +116,47 @@ body{
     z-index: 2;
 }
 
-.profiles{
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+
+.profile{
+    position: fixed;
 }
 
 .github{
-    align-items: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    /* transform: rotate(-90deg); */
-    animation: git 1s ease-in 2s forwards;
-    justify-content: center;
-    transform: translateX(-15vw);
-    opacity: 0;
-   
+    left: -5%;
+    animation: git 1s forwards 2s;
 }
 
 @keyframes git{
-    0% {
-        transform: rotate(0);
-
-   
-    }
-
     100%{
+        left: -2%;
         transform: rotate(-90deg);
-        opacity: 100;
     }
-}
-
-.linkin{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    margin-bottom: 3vw;
 }
 
 .behance{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    transform: rotate(90deg);
+    right: -10%;
+    animation: beh 1s forwards 2s;
 }
 
-.profiles img{
+@keyframes beh{
+    100%{
+        right: -4%;
+        transform: rotate(90deg);
+    }
+}
+
+.linkedin{
+    bottom: -3%;
+    animation: lin 1s forwards 2s;
+}
+
+@keyframes lin{
+    100%{
+        bottom: 0%;
+    }
+}
+
+.profile img{
     width: 20%;
-    margin: 0.5vw;
 }
 
