@@ -134,7 +134,7 @@ body{
 }
 
 .behance{
-    right: -10%;
+    right: -12%;
     animation: beh 1s forwards 2s;
 }
 
@@ -159,4 +159,3 @@ body{
 .profile img{
     width: 20%;
 }
-
