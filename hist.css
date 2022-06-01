@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   max-height: 100vh;
+}
+.presentation{
+    width: 40%;
+    object-fit: cover;
+    display: flex;
+
+}
+
+.top{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    width: 60%;
+    text-align: center;
+}
+.top h1{
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.top h5{
+    font-size: 1vw;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: 99.5%;
+    transition: opacity 1s, ease 4s;
+    opacity: 100;
+    
+}
+
+.nav a{
+    font-size: 1vw;
+    margin: 0vw 2vw 0vw;
+}
+
+@media only screen and (max-width: 800px) {
+    .presentation{
+        width: 100%;
+    }
+    .top{
+        margin-top: 50px;
+    }
+    .top h5{
+        font-size: 2.5vw;
+        margin-bottom: 40px;
+    }
+  }

@@ -13,7 +13,7 @@ body{
 }
 
 .first{
-    overflow-y: hidden;
+    overflow: hidden;
     display: flex;
     height: 95vh;
     width: 95vw;
