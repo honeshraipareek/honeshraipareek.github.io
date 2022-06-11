@@ -168,11 +168,15 @@ body{
 }
 
 .work1{
-    width: 70%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .work1 img{
-    width: 100%;
+    width: 80%;
     box-shadow: inset;
+    margin: 1rem;
 }
 

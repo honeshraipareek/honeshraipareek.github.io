@@ -29,3 +29,38 @@ body{
     height: 105vh;
 
 }
+
+.github{
+    top: 50%;
+ left: -18%;   
+ animation: git 1s forwards 2s;
+}
+
+@keyframes git{
+    100%{
+        left: -13%;
+        transform: rotate(-90deg);
+    }
+}
+.behance{
+    right: -38%;
+    animation: beh 1s forwards 2s;
+}
+
+@keyframes beh{
+    100%{
+        right: -15%;
+        transform: rotate(90deg);
+    }
+}
+
+.linkedin{
+    left: 40%;
+}
+.main{
+    font-size: 12vw;
+}
+
+.sub{
+    font-size: 3vw;
+}

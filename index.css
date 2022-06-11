@@ -94,7 +94,7 @@ body{
 }
 
 .sub{
-    color: rgb(141, 141, 141);
+    color: rgb(212, 212, 212);
     font-size: 1vw;
     font-family: 'Poppins', sans-serif;
     margin-top: -1.5vw;
@@ -122,6 +122,7 @@ body{
 }
 
 .github{
+    top: 50%;
     left: -5%;
     animation: git 1s forwards 2s;
 }
@@ -134,6 +135,7 @@ body{
 }
 
 .behance{
+    top: 50%;
     right: -12%;
     animation: beh 1s forwards 2s;
 }
