@@ -8,6 +8,35 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar a{
-    font-size: 2.5vw;
+section div{
+    margin: -40px 0 -40px 0;
+}
+
+.first h1{
+    font-size: 7vw;
+}
+
+.first h2{
+    font-size: 4vw;
+}
+
+.second img{
+    width: 120%;
+}
+
+.third img{
+    width: 80%;
+}
+
+.content h2{
+    font-size: 4vw;
+}
+
+
+.skills{
+    justify-content: space-evenly;
+}
+.skills img{
+    width: 100%;
+    margin: 30px;
 }
