@@ -21,7 +21,7 @@ body{
     align-items: center;
     font-size: 5vw;
     font-weight: 700;
-    position: absolute;
+    position: fixed;
     background-color: white;
     transition: opacity 1s ease 3s;
     opacity: 0;
